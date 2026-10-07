@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="200" viewBox="0 0 240 200">
+<ellipse cx="124" cy="179" rx="60" ry="8" fill="#cdbb9d" opacity=".4"/>
+<g transform="rotate(7 120 100)"><path d="M74 28h93l-4 18 10 108-6 23H73l-7-23 11-108Z" fill="#d89647"/><path d="M83 31h72l-4 16 10 110-5 16H84l-7-18 11-109Z" fill="#e6ab59"/>
+<path d="M74 28h93v9H74M73 167h94v10H73" fill="#be7836"/><path d="M80 32h80M80 172h80" stroke="#e3b875" stroke-width="2" stroke-dasharray="3 4"/>
+<ellipse cx="120" cy="101" rx="40" ry="46" fill="#fbefcf"/><text x="120" y="87" text-anchor="middle" fill="#965a2f" font-family="Georgia,serif" font-size="18" font-weight="bold">CRUNCH</text><text x="120" y="103" text-anchor="middle" fill="#965a2f" font-family="Arial,sans-serif" font-size="8" letter-spacing="2">POTATO CHIPS</text>
+<g fill="#ebc164" stroke="#c89a49" stroke-width="1.5"><ellipse cx="111" cy="125" rx="17" ry="11" transform="rotate(-22 111 125)"/><ellipse cx="132" cy="129" rx="16" ry="10" transform="rotate(20 132 129)"/></g><path d="m103 120 12 7m-7-11 13 7m3 1 13 9m-10-12 13 9" stroke="#d2a24d" stroke-width="1.5"/></g>
+</svg>

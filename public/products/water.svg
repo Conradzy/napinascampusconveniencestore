@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="200" viewBox="0 0 240 200">
+<ellipse cx="121" cy="180" rx="40" ry="7" fill="#b3c9c9" opacity=".45"/>
+<g transform="rotate(6 120 100)"><path d="M106 36h28v15c0 11 21 14 21 31v82q0 13-15 13h-40q-15 0-15-13V82c0-17 21-20 21-31Z" fill="#d8ece7" stroke="#90b8b1" stroke-width="2"/>
+<path d="M96 77v85q0 6 6 6" fill="none" stroke="#f7fffa" stroke-width="6" stroke-linecap="round"/><path d="M85 88h70v53H85Z" fill="#588d82"/><path d="M85 128c18-7 45 10 70 0v13H85Z" fill="#7aac9e"/>
+<path d="M120 95c-4 7-8 10-8 14a8 8 0 0 0 16 0c0-4-4-7-8-14Z" fill="#dcedd9"/><text x="120" y="127" text-anchor="middle" fill="#f8fbed" font-family="Arial,sans-serif" font-size="9" font-weight="bold" letter-spacing="2">PURE WATER</text>
+<rect x="102" y="22" width="36" height="17" rx="4" fill="#48796e"/><path d="M109 25v10m7-10v10m8-10v10m7-10v10" stroke="#76a394" stroke-width="2"/><path d="M91 151h58m-58 9h58M100 59h40" stroke="#add0c5" stroke-width="2"/></g>
+</svg>

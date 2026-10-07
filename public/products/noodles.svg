@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="200" viewBox="0 0 240 200">
+<ellipse cx="120" cy="174" rx="60" ry="9" fill="#d8c6a7" opacity=".45"/>
+<g transform="rotate(-7 120 100)"><path d="M66 70h108l-13 96c-24 9-56 9-80 0Z" fill="#faf5dc" stroke="#dec9a1" stroke-width="2"/>
+<path d="m70 96 6 46c28 9 61 9 88 0l6-46Z" fill="#c86e44"/><path d="m83 156 2 9c22 6 47 6 72 0l1-9" fill="#e0ad64"/>
+<ellipse cx="120" cy="71" rx="56" ry="16" fill="#efd6a3" stroke="#c5a66e" stroke-width="2"/><ellipse cx="120" cy="69" rx="47" ry="10" fill="#ba7842"/>
+<g stroke="#f8d694" stroke-width="3" fill="none"><path d="M81 69c8-12 9 9 18-1s10 9 18-1 11 9 20 0 12 4 20-1M91 74c7-8 10 7 18-1s12 7 21-1 10 5 17-2"/></g>
+<text x="120" y="115" text-anchor="middle" fill="#fff8e4" font-family="Georgia,serif" font-size="19" font-weight="bold">NOODLES</text><text x="120" y="132" text-anchor="middle" fill="#fff1d8" font-family="Arial,sans-serif" font-size="8" letter-spacing="2">A CUP OF COMFORT</text>
+<path d="M98 44c-9-10 10-12 2-22M121 42c-9-10 10-12 2-22M143 46c-9-10 10-12 2-22" fill="none" stroke="#b79974" stroke-width="3" stroke-linecap="round"/></g>
+</svg>

@@ -1,26 +1,60 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  color-scheme: light;
+  --background: #f7f7f2;
+  --foreground: #243e32;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-forest: #254d3d;
+  --color-sage: #e9efdf;
+  --color-muted: #737b71;
+  --color-line: #e5e8de;
+  --font-sans: "Segoe UI", Arial, Helvetica, sans-serif;
+  --font-display: Georgia, "Times New Roman", serif;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
+}
+
+button, a, input {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button:not(:disabled), a {
+  cursor: pointer;
+}
+
+button, a {
+  transition: background-color 150ms ease, border-color 150ms ease, color 150ms ease;
+}
+
+:focus-visible {
+  outline: 3px solid #b97b38;
+  outline-offset: 4px;
+}
+
+button:disabled {
+  cursor: not-allowed;
+}
+
+::selection {
+  background: #d5e4bb;
+}
+
+.selection-pattern {
+  background-image: radial-gradient(#bdcbb1 0.8px, transparent 0.8px);
+  background-size: 22px 22px;
+}
+
+.receipt-paper {
+  background-image: linear-gradient(135deg, #f7f7f2 6px, transparent 0), linear-gradient(225deg, #f7f7f2 6px, transparent 0);
+  background-size: 12px 12px;
+  background-repeat: repeat-x;
 }
