@@ -18,7 +18,13 @@ export function ProductCard({ product, quantity, disabled, onAdd }: {
   return (
     <article className="rounded-[22px] border border-line bg-white p-3.5">
       <div className={"relative flex h-40 items-center justify-center overflow-hidden rounded-xl xl:h-44 " + categoryColors[product.category]}>
-        <Image src={product.image} alt={"Illustration of " + product.name} width={200} height={180} className="h-full w-full object-contain p-2" />
+        <Image
+          src={product.image}
+          alt={"Photo of " + product.name}
+          width={500}
+          height={500}
+          className={"h-full w-full " + (product.imageFit === "cover" ? "object-cover" : "object-contain p-2")}
+        />
         {quantity > 0 && <span className="absolute top-2.5 right-2.5 rounded-full bg-white px-2.5 py-1 text-[10px] font-semibold text-forest">{quantity} in cart</span>}
       </div>
       <div className="px-1 pt-4">

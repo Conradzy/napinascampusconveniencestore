@@ -1,5 +1,5 @@
-import { OrderTypeSelection } from "@/components/order-type-selection";
+import { KioskOrderTypeSelection } from "@/components/kiosk-order-type-selection";
 
 export default function Home() {
-  return <OrderTypeSelection />;
+  return <KioskOrderTypeSelection />;
 }

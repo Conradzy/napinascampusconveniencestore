@@ -10,7 +10,7 @@ import { formatCurrency } from "@/utils/format";
 import { validatePayment } from "@/utils/payment";
 import { Brand } from "./brand";
 import { Icon } from "./icon";
-import { OrderTypeSelection } from "./order-type-selection";
+import { KioskOrderTypeSelection } from "./kiosk-order-type-selection";
 import { ProductCard } from "./product-card";
 import { Receipt } from "./receipt";
 
@@ -20,7 +20,7 @@ export function PosRoute() {
 
   // A direct visit without a valid selection must still begin with order type.
   if (type !== "dine-in" && type !== "take-out") {
-    return <OrderTypeSelection />;
+    return <KioskOrderTypeSelection />;
   }
 
   return <PosScreen key={type} orderType={type === "dine-in" ? "Dine In" : "Take Out"} />;
@@ -158,7 +158,13 @@ function PosScreen({ orderType }: { orderType: OrderType }) {
             <ul aria-label="Cart items" className="my-4 divide-y divide-line">
               {cart.map((item) => (
                 <li key={item.id} className="flex gap-3 py-4">
-                  <Image src={item.image} alt="" width={52} height={60} className="h-16 w-14 shrink-0 rounded-lg bg-background object-contain" />
+                  <Image
+                    src={item.image}
+                    alt=""
+                    width={80}
+                    height={80}
+                    className={"h-16 w-14 shrink-0 rounded-lg bg-background " + (item.imageFit === "cover" ? "object-cover" : "object-contain p-1")}
+                  />
                   <div className="min-w-0 flex-1">
                     <div className="flex items-start justify-between gap-1">
                       <h3 className="text-xs leading-5 font-semibold">{item.name}</h3>

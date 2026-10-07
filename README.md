@@ -38,7 +38,7 @@ Stop the development server before starting the production server on the same po
 - app/pos/page.tsx: POS route with the Suspense boundary required for reading query parameters.
 - app/layout.tsx and app/globals.css: page metadata, system fonts, Tailwind theme, and global styles.
 - app/icon.svg: store icon.
-- components/order-type-selection.tsx: two large order-type options.
+- components/kiosk-order-type-selection.tsx: centered kiosk order-type options.
 - components/pos-screen.tsx: React state, category filters, order summary, quantity controls, cash form, and reset.
 - components/product-card.tsx: product image, name, category, price, and Add to Cart button.
 - components/receipt.tsx: payment confirmation and digital receipt.
@@ -47,7 +47,7 @@ Stop the development server before starting the production server on the same po
 - utils/cart.ts: pure functions for adding, changing quantities, removing, and totaling items.
 - utils/format.ts: Philippine peso formatting with two decimal places.
 - utils/payment.ts: payment validation and change calculation.
-- public/products/: six original lightweight SVG placeholder illustrations, served locally.
+- public/foodimages/: six local JPG product photos used by the product grid and cart.
 
 The interface uses Georgia for warm serif headings and Segoe UI/Arial for readable controls. Images and fonts require no third-party requests. No new dependencies were added.
 

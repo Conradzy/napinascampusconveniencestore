@@ -6,6 +6,7 @@ export type Product = {
   price: number;
   category: Category;
   image: string;
+  imageFit: "cover" | "contain";
 };
 
 export type CartItem = Product & { quantity: number };
@@ -21,12 +22,12 @@ export type Receipt = {
 };
 
 export const products: Product[] = [
-  { id: "noodles", name: "Instant Noodles", price: 18, category: "Snacks", image: "/products/noodles.svg" },
-  { id: "chips", name: "Potato Chips", price: 25, category: "Snacks", image: "/products/chips.svg" },
-  { id: "soda", name: "Soft Drink (Can)", price: 25, category: "Drinks", image: "/products/soda.svg" },
-  { id: "water", name: "Bottled Water", price: 20, category: "Drinks", image: "/products/water.svg" },
-  { id: "ballpen", name: "Ballpen (piece)", price: 12, category: "School Supplies", image: "/products/ballpen.svg" },
-  { id: "notebook", name: "Notebook (piece)", price: 35, category: "School Supplies", image: "/products/notebook.svg" },
+  { id: "noodles", name: "Instant Noodles", price: 18, category: "Snacks", image: "/foodimages/noodles.jpg", imageFit: "contain" },
+  { id: "chips", name: "Potato Chips", price: 25, category: "Snacks", image: "/foodimages/potatochips.jpg", imageFit: "cover" },
+  { id: "soda", name: "Soft Drink (Can)", price: 25, category: "Drinks", image: "/foodimages/softdrink.jpg", imageFit: "cover" },
+  { id: "water", name: "Bottled Water", price: 20, category: "Drinks", image: "/foodimages/water.jpg", imageFit: "contain" },
+  { id: "ballpen", name: "Ballpen (piece)", price: 12, category: "School Supplies", image: "/foodimages/ballpen.jpg", imageFit: "cover" },
+  { id: "notebook", name: "Notebook (piece)", price: 35, category: "School Supplies", image: "/foodimages/notebook.jpg", imageFit: "contain" },
 ];
 
 export const categories = ["All", "Snacks", "Drinks", "School Supplies"] as const;
