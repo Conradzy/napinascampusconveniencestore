@@ -39,7 +39,7 @@ Stop the development server before starting the production server on the same po
 - app/layout.tsx and app/globals.css: page metadata, system fonts, Tailwind theme, and global styles.
 - app/icon.svg: store icon.
 - components/kiosk-order-type-selection.tsx: centered kiosk order-type options.
-- components/pos-screen.tsx: React state, category filters, order summary, quantity controls, cash form, and reset.
+- components/pos-screen.tsx: React state, category filters, order summary, quantity controls, modal checkout, and reset.
 - components/product-card.tsx: product image, name, category, price, and Add to Cart button.
 - components/receipt.tsx: payment confirmation and digital receipt.
 - components/brand.tsx and components/icon.tsx: small reusable visual components.
@@ -69,7 +69,7 @@ Each subtotal is unit price × quantity. The overall total is derived from the c
 
 ### Cash validation
 
-The form uses a numeric input with a 0.01 step. Custom validation runs on submission (the form uses noValidate so native browser messages do not replace the required exam messages).
+Proceed to Checkout opens a cash-payment modal. The form uses a numeric input with a 0.01 step. Custom validation runs on submission (the form uses noValidate so native browser messages do not replace the required exam messages).
 
 Blank, non-numeric, negative, non-finite, unsafe, and malformed values return:
 
@@ -81,11 +81,11 @@ Amounts must be ordinary decimal numbers with at most two decimal places. A vali
 
 The placeholder is replaced with the formatted current total, for example ₱135.00. Zero is treated as insufficient for a nonempty order. Browsers may filter letters from a number input; an empty or malformed result is still rejected.
 
-An empty cart cannot be paid. Valid payment computes change = amount paid − total, in whole centavos.
+An empty cart cannot be paid. Valid payment computes change = amount paid − total, in whole centavos. Before completing the transaction, a separate confirmation step shows the total, amount received, and expected change.
 
 ### Confirmation and receipt
 
-Successful payment creates a receipt object containing a CC-prefixed random transaction reference, selected order type, a copied snapshot of the items, total, amount paid, and change. The receipt component derives each line subtotal from the saved items and displays the payment confirmation. Product additions and cart edits are locked after payment so the paid order cannot change.
+Successful payment creates a receipt object containing a CC-prefixed random transaction reference, selected order type, a copied snapshot of the items, total, amount paid, and change. The receipt component derives each line subtotal from the saved items and displays the payment confirmation inside the checkout modal. The order is locked after payment review, the amount is revalidated at final confirmation, and the receipt remains open until New Transaction starts a clean order.
 
 ### New transaction
 
